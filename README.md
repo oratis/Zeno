@@ -29,6 +29,7 @@ Zeno 追求**需求端与供给端的双高效**：
 | 10 | [路线图与里程碑](./docs/10-roadmap.md) | MVP → 双市场 → 平台化 |
 | 11 | [度量体系与北极星](./docs/11-metrics.md) | 北极星指标、双边指标、反指标 |
 | 12 | [需求端深潜](./docs/12-demand-deep-dive.md) | 从描述品牌到描述需求：需求解剖、获取、隐性推断、语义桥、难需求 |
+| 13 | [执行启动](./docs/13-execution-kickoff.md) | MVP 落地计划：垂直切片、技术栈、Sprint backlog、完成标准 |
 
 ## 状态
 
