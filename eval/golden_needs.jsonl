@@ -1,0 +1,6 @@
+{"id": "commute-no-ear-pain", "query": "通勤用、戴久了别夹耳朵、200 刀以内的耳机", "price_max": 200, "forbid_form_factor": ["in_ear"]}
+{"id": "running-open", "query": "跑步用、不堵耳朵、防汗的耳机", "require_form_factor": ["open_ear"]}
+{"id": "subway-max-anc", "query": "在很吵的地铁里要最强降噪，预算不太在意", "require_anc": true}
+{"id": "budget-home", "query": "学生党，便宜耐用，在家用，80 刀以内", "price_max": 80}
+{"id": "portable-pocket", "query": "最小最便携、能塞进口袋的耳机", "require_form_factor": ["in_ear"]}
+{"id": "anc-budget", "query": "100 刀以内，要主动降噪", "price_max": 100, "require_anc": true}

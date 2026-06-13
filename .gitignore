@@ -20,3 +20,27 @@ Icon
 *.log
 tmp/
 .cache/
+
+# Node / Next.js (app/)
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# Python (pipeline/, eval/)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+
+# 本地数据 / 密钥
+.env.local
+.env.*.local
+*.pem

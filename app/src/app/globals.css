@@ -1,0 +1,49 @@
+:root {
+  --bg: #0f1117;
+  --panel: #171a22;
+  --panel-2: #1f242e;
+  --border: #2a2f3a;
+  --text: #e8eaed;
+  --muted: #9aa3b2;
+  --accent: #4f7cff;
+  --accent-soft: #1e2740;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.55;
+}
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 120px; }
+.brand { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+.brand h1 { font-size: 20px; margin: 0; }
+.brand .tag { color: var(--muted); font-size: 13px; }
+.disclosure { color: var(--muted); font-size: 12px; margin: 6px 0 20px; }
+
+.msg { margin: 14px 0; }
+.msg.user .bubble { background: var(--accent-soft); border: 1px solid var(--border); }
+.msg.assistant .bubble { background: var(--panel); border: 1px solid var(--border); }
+.bubble { display: inline-block; padding: 10px 14px; border-radius: 12px; white-space: pre-wrap; max-width: 100%; }
+.status { color: var(--muted); font-size: 13px; font-style: italic; margin: 6px 0; }
+
+.cards { display: grid; gap: 12px; margin: 12px 0; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
+.card .top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.card .title { font-weight: 600; }
+.card .price { color: var(--accent); font-weight: 700; white-space: nowrap; }
+.card .why { color: var(--text); font-size: 14px; margin: 8px 0; }
+.card .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.chip { background: var(--panel-2); border: 1px solid var(--border); color: var(--muted); font-size: 12px; padding: 2px 8px; border-radius: 999px; }
+.card .buy { display: inline-block; margin-top: 6px; background: var(--accent); color: #fff; text-decoration: none; padding: 8px 14px; border-radius: 10px; font-size: 14px; }
+.card .aff { color: var(--muted); font-size: 11px; margin-top: 8px; }
+
+.composer { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, var(--bg) 30%); padding: 16px; }
+.composer .inner { max-width: 760px; margin: 0 auto; display: flex; gap: 8px; }
+.composer input { flex: 1; background: var(--panel); border: 1px solid var(--border); color: var(--text); border-radius: 12px; padding: 12px 14px; font-size: 15px; }
+.composer button { background: var(--accent); color: #fff; border: none; border-radius: 12px; padding: 0 18px; font-size: 15px; cursor: pointer; }
+.composer button:disabled { opacity: 0.5; cursor: default; }

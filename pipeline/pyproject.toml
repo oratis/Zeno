@@ -1,0 +1,21 @@
+[project]
+name = "zeno-pipeline"
+version = "0.1.0"
+description = "Zeno 供给富化管道：联盟接入 → 标准化 → 富化 → 入库（docs/05 §5, docs/06 §2.2）"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40",
+    "psycopg[binary]>=3.2",
+    "pydantic>=2.7",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.5", "mypy>=1.10"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["zeno_pipeline*"]
