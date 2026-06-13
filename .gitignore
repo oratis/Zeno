@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 环境变量 / 密钥
+.env
+.env.*
+!.env.example
+
+# 日志 / 临时文件
+*.log
+tmp/
+.cache/
