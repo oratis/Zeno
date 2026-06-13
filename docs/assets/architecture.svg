@@ -1,0 +1,74 @@
+<svg width="100%" viewBox="0 0 680 510" xmlns="http://www.w3.org/2000/svg" role="img" font-family="var(--font-sans, system-ui, sans-serif)" text-anchor="middle">
+  <title>Zeno 系统架构</title>
+  <desc>分层架构：客户端 → 接入层 → 对话编排（与 AI Gateway 互联）→ 需求理解 / 检索 / 排序 / 记忆 / 履约 → 商品知识图谱索引与联盟支付；供给数据管道汇入索引。</desc>
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3 L0,6 Z" fill="var(--color-text-secondary, #6b7280)"/>
+    </marker>
+  </defs>
+
+  <g stroke="var(--color-text-secondary, #6b7280)" stroke-width="1.5" fill="none">
+    <line x1="340" y1="68"  x2="340" y2="89"  marker-end="url(#ah)"/>
+    <line x1="340" y1="136" x2="340" y2="157" marker-end="url(#ah)"/>
+    <line x1="340" y1="208" x2="340" y2="225" marker-end="url(#ah)"/>
+    <line x1="76" y1="228" x2="584" y2="228"/>
+    <line x1="76"  y1="228" x2="76"  y2="237" marker-end="url(#ah)"/>
+    <line x1="203" y1="228" x2="203" y2="237" marker-end="url(#ah)"/>
+    <line x1="330" y1="228" x2="330" y2="237" marker-end="url(#ah)"/>
+    <line x1="457" y1="228" x2="457" y2="237" marker-end="url(#ah)"/>
+    <line x1="584" y1="228" x2="584" y2="237" marker-end="url(#ah)"/>
+    <line x1="225" y1="290" x2="248" y2="330" marker-end="url(#ah)"/>
+    <line x1="330" y1="290" x2="305" y2="330" marker-end="url(#ah)"/>
+    <line x1="584" y1="290" x2="562" y2="330" marker-end="url(#ah)"/>
+    <line x1="270" y1="420" x2="270" y2="385" marker-end="url(#ah)"/>
+  </g>
+  <line x1="490" y1="184" x2="518" y2="184" stroke="var(--color-text-info, #2f6fed)" stroke-width="1.6" marker-end="url(#ah)" marker-start="url(#ah)"/>
+
+  <rect x="140" y="24" width="400" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="340" y="44" font-size="13.5" font-weight="600" fill="var(--color-text-primary, #1a1d24)">客户端 Clients</text>
+  <text x="340" y="59" font-size="10.5" fill="var(--color-text-secondary, #6b7280)">Web · App · 小程序 · 浏览器助手</text>
+
+  <rect x="140" y="92" width="400" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="340" y="112" font-size="13.5" font-weight="600" fill="var(--color-text-primary, #1a1d24)">接入层 BFF / Gateway</text>
+  <text x="340" y="127" font-size="10.5" fill="var(--color-text-secondary, #6b7280)">鉴权 · 区域路由 · 流式</text>
+
+  <rect x="190" y="160" width="300" height="48" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-text-info, #2f6fed)" stroke-width="2"/>
+  <text x="340" y="182" font-size="13.5" font-weight="700" fill="var(--color-text-primary, #1a1d24)">对话编排 Orchestrator</text>
+  <text x="340" y="197" font-size="10.5" fill="var(--color-text-secondary, #6b7280)">Agent Loop · 工具调度</text>
+
+  <rect x="520" y="160" width="140" height="48" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-text-info, #2f6fed)" stroke-width="2"/>
+  <text x="590" y="182" font-size="12.5" font-weight="700" fill="var(--color-text-primary, #1a1d24)">AI Gateway</text>
+  <text x="590" y="197" font-size="9" fill="var(--color-text-secondary, #6b7280)">分级模型 · 缓存 · 降级</text>
+
+  <rect x="20"  y="240" width="112" height="50" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="76" y="262" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">需求理解</text>
+  <text x="76" y="277" font-size="9.5" fill="var(--color-text-secondary, #6b7280)">意图 · 约束 · 推断</text>
+
+  <rect x="147" y="240" width="112" height="50" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="203" y="262" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">检索</text>
+  <text x="203" y="277" font-size="9.5" fill="var(--color-text-secondary, #6b7280)">混合召回</text>
+
+  <rect x="274" y="240" width="112" height="50" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="330" y="262" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">排序</text>
+  <text x="330" y="277" font-size="9.5" fill="var(--color-text-secondary, #6b7280)">多目标</text>
+
+  <rect x="401" y="240" width="112" height="50" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="457" y="269" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">记忆 / 画像</text>
+
+  <rect x="528" y="240" width="112" height="50" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="584" y="269" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">履约 / 归因</text>
+
+  <rect x="130" y="332" width="280" height="50" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="270" y="356" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">商品知识图谱 + 索引</text>
+  <text x="270" y="371" font-size="10" fill="var(--color-text-secondary, #6b7280)">向量 · 结构 · 全文 · KG</text>
+
+  <rect x="470" y="332" width="170" height="50" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="555" y="356" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">联盟 / 支付</text>
+  <text x="555" y="371" font-size="10" fill="var(--color-text-secondary, #6b7280)">CPS · ACP · 卡组织</text>
+
+  <rect x="130" y="420" width="280" height="46" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="270" y="441" font-size="12.5" font-weight="600" fill="var(--color-text-primary, #1a1d24)">供给数据管道</text>
+  <text x="270" y="456" font-size="9.5" fill="var(--color-text-secondary, #6b7280)">标准化 → 富化 → 去重 → 质检</text>
+
+  <text x="20" y="496" font-size="10" text-anchor="start" fill="var(--color-text-secondary, #6b7280)">蓝色描边 = AI / 编排核心　·　实线 = 请求链路　·　虚线框 = 离线管道</text>
+</svg>

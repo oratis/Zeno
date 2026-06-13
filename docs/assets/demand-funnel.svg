@@ -1,0 +1,57 @@
+<svg width="100%" viewBox="0 0 680 490" xmlns="http://www.w3.org/2000/svg" role="img" font-family="var(--font-sans, system-ui, sans-serif)" text-anchor="middle">
+  <title>Zeno 需求漏斗</title>
+  <desc>从模糊需求收窄到决定：表达需求 → 获取与澄清 → 理解与隐性推断（Need Spec）→ 映射召回 → 多目标排序 → 2-4 候选 → 决定履约；候选可回流触发需求演化，长期记忆作为个性化先验注入理解环节。</desc>
+  <defs>
+    <marker id="dn" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3 L0,6 Z" fill="var(--color-text-secondary, #6b7280)"/>
+    </marker>
+    <marker id="lp" markerWidth="11" markerHeight="11" refX="7" refY="3.2" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,3.2 L0,6.4 Z" fill="var(--color-text-info, #2f6fed)"/>
+    </marker>
+  </defs>
+
+  <g stroke="var(--color-text-secondary, #6b7280)" stroke-width="1.5" fill="none" marker-end="url(#dn)">
+    <line x1="300" y1="68"  x2="300" y2="80"/>
+    <line x1="300" y1="126" x2="300" y2="138"/>
+    <line x1="300" y1="184" x2="300" y2="196"/>
+    <line x1="300" y1="242" x2="300" y2="254"/>
+    <line x1="300" y1="300" x2="300" y2="312"/>
+    <line x1="300" y1="358" x2="300" y2="370"/>
+  </g>
+
+  <path d="M410,336 C600,330 600,175 502,164" fill="none" stroke="var(--color-text-info, #2f6fed)" stroke-width="1.8" marker-end="url(#lp)"/>
+  <text x="612" y="246" font-size="10.5" fill="var(--color-text-info, #2f6fed)">演化</text>
+  <text x="612" y="260" font-size="10.5" fill="var(--color-text-info, #2f6fed)">改约束</text>
+
+  <path d="M100,406 L110,188" fill="none" stroke="var(--color-text-secondary, #6b7280)" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#dn)"/>
+  <text transform="rotate(-90 84 300)" x="84" y="300" font-size="9.5" fill="var(--color-text-secondary, #6b7280)">个性化先验</text>
+
+  <rect x="30"  y="24"  width="540" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="300" y="44" font-size="13.5" font-weight="600" fill="var(--color-text-primary, #1a1d24)">① 表达需求</text>
+  <text x="300" y="59" font-size="10" fill="var(--color-text-secondary, #6b7280)">自然语言 · 场景 / 约束 / 隐性偏好</text>
+
+  <rect x="65"  y="82"  width="470" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="300" y="102" font-size="13.5" font-weight="600" fill="var(--color-text-primary, #1a1d24)">② 获取 + 澄清</text>
+  <text x="300" y="117" font-size="10" fill="var(--color-text-secondary, #6b7280)">假设优先 · 只问高增益问题</text>
+
+  <rect x="100" y="140" width="400" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-text-info, #2f6fed)" stroke-width="2"/>
+  <text x="300" y="160" font-size="13.5" font-weight="700" fill="var(--color-text-primary, #1a1d24)">③ 理解 + 隐性推断</text>
+  <text x="300" y="175" font-size="10" fill="var(--color-text-secondary, #6b7280)">Need Spec 2.0 · 来源 / 置信 / 弹性</text>
+
+  <rect x="135" y="198" width="330" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="300" y="218" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">④ 映射 → 召回</text>
+  <text x="300" y="233" font-size="10" fill="var(--color-text-secondary, #6b7280)">语义桥 · 商品知识图谱</text>
+
+  <rect x="165" y="256" width="270" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="300" y="283" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">⑤ 多目标排序</text>
+
+  <rect x="190" y="314" width="220" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="300" y="341" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">⑥ 2–4 候选 + 理由</text>
+
+  <rect x="215" y="372" width="170" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-text-info, #2f6fed)" stroke-width="1.8"/>
+  <text x="300" y="399" font-size="13" font-weight="700" fill="var(--color-text-primary, #1a1d24)">⑦ 决定 + 履约</text>
+
+  <rect x="20" y="408" width="160" height="44" rx="8" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="100" y="428" font-size="12" font-weight="600" fill="var(--color-text-primary, #1a1d24)">长期记忆</text>
+  <text x="100" y="443" font-size="9.5" fill="var(--color-text-secondary, #6b7280)">偏好 · 拒绝信号</text>
+</svg>

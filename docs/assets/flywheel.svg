@@ -1,0 +1,46 @@
+<svg width="100%" viewBox="0 0 680 560" xmlns="http://www.w3.org/2000/svg" role="img" font-family="var(--font-sans, system-ui, sans-serif)" text-anchor="middle">
+  <title>Zeno 双边增长飞轮</title>
+  <desc>顺时针自我强化：需求侧体验好 → 更多真实需求 → 更多被引导成交 → 更多商家 0 佣金入驻 → 更优供给 → 更精准匹配 → 回到需求侧；中心是越转越厚的复利资产：商品知识图谱与用户记忆。</desc>
+  <defs>
+    <marker id="fw" markerWidth="11" markerHeight="11" refX="7" refY="3.2" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,3.2 L0,6.4 Z" fill="var(--color-text-info, #2f6fed)"/>
+    </marker>
+  </defs>
+
+  <g stroke="var(--color-text-info, #2f6fed)" stroke-width="2.2" fill="none" marker-end="url(#fw)">
+    <path d="M386,132 Q430,118 440,162"/>
+    <path d="M487,244 Q526,275 487,306"/>
+    <path d="M440,388 Q432,436 386,418"/>
+    <path d="M294,418 Q248,436 240,388"/>
+    <path d="M193,306 Q154,275 193,244"/>
+    <path d="M240,162 Q248,114 294,132"/>
+  </g>
+
+  <circle cx="340" cy="275" r="80" fill="var(--color-background-primary, #ffffff)" stroke="var(--color-text-info, #2f6fed)" stroke-width="1.6" stroke-dasharray="4 4"/>
+  <text x="340" y="264" font-size="16" font-weight="700" fill="var(--color-text-primary, #1a1d24)">双边飞轮</text>
+  <text x="340" y="284" font-size="10.5" fill="var(--color-text-secondary, #6b7280)">知识图谱 × 用户记忆</text>
+  <text x="340" y="299" font-size="10.5" fill="var(--color-text-secondary, #6b7280)">复利资产 · 越转越厚</text>
+
+  <rect x="260" y="58"  width="160" height="54" rx="10" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="340" y="90" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">① 需求侧体验好</text>
+
+  <rect x="424" y="153" width="160" height="54" rx="10" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="504" y="185" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">② 更多真实需求</text>
+
+  <rect x="424" y="343" width="160" height="54" rx="10" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="504" y="366" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">③ 更多被引导成交</text>
+  <text x="504" y="382" font-size="10" fill="var(--color-text-secondary, #6b7280)">GMV / 收入</text>
+
+  <rect x="260" y="438" width="160" height="54" rx="10" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="340" y="470" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">④ 商家 0 佣金入驻</text>
+
+  <rect x="96" y="343" width="160" height="54" rx="10" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="176" y="366" font-size="12" font-weight="600" fill="var(--color-text-primary, #1a1d24)">⑤ 更优 · 独家 · 低价</text>
+  <text x="176" y="382" font-size="10" fill="var(--color-text-secondary, #6b7280)">自有供给</text>
+
+  <rect x="96" y="153" width="160" height="54" rx="10" fill="var(--bg2, #f4f5f7)" stroke="var(--color-border-secondary, #d7dbe0)" stroke-width="1.5"/>
+  <text x="176" y="176" font-size="13" font-weight="600" fill="var(--color-text-primary, #1a1d24)">⑥ 更精准匹配</text>
+  <text x="176" y="192" font-size="10" fill="var(--color-text-secondary, #6b7280)">+ 更好到手价</text>
+
+  <text x="340" y="540" font-size="11.5" fill="var(--color-text-secondary, #6b7280)">顺时针自我强化的双边网络效应 — 转得越久，后来者越难追</text>
+</svg>

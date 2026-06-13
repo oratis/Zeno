@@ -28,6 +28,7 @@ Zeno 追求**需求端与供给端的双高效**：
 | 09 | [信任、安全与中美合规](./docs/09-trust-safety-compliance.md) | 推荐中立、PIPL/FTC、内容与 AI 安全 |
 | 10 | [路线图与里程碑](./docs/10-roadmap.md) | MVP → 双市场 → 平台化 |
 | 11 | [度量体系与北极星](./docs/11-metrics.md) | 北极星指标、双边指标、反指标 |
+| 12 | [需求端深潜](./docs/12-demand-deep-dive.md) | 从描述品牌到描述需求：需求解剖、获取、隐性推断、语义桥、难需求 |
 
 ## 状态
 
